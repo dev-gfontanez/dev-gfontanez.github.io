@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <header class="header fixed w-full z-10">
+        <nav class="bg-white border-gray-200 py-2.5 drop-shadow-md dark:bg-gray-900 dark:shadow-sm dark:shadow-slate-700">
+            <div class="justify-between flex flex-wrap items-center space-x-2 max-w-screen-xl px-1 mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="./images/IMG_1228.JPG" class="h-6 mx-1 mr-2 rounded" alt="" />
+                    <div class="flex flex-col items-center">
+                        <span class="self-center text-md font-semibold truncate dark:text-white">Gilberto
+                            Fontanez</span>
+                        <span class="self-center text-xs font-semibold truncate dark:text-white">A Software
+                            Developer</span>
+                    </div>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <div class="hidden mt-2 mr-4 sm:inline-block">
+                    </div>
+                    <button
+                        class="text-white mx-1 bg-emerald-600 hover:bg-emerald-500 focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-emerald-600 dark:hover:bg-emerald-700 focus:outline-none dark:focus:ring-emerald-500"
+                        id="contactEmail">
+                        Contact
+                    </button>
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center mr-3 ml-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 mb-2 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="./index.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-t border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-emerald-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="./tracking.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-emerald-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Tracking</a>
+                        </li>
+                        <li>
+                            <a href="./ticket.html"
+                                class="block py-2 pl-3 pr-4 text-white bg-emerald-600 rounded lg:bg-transparent lg:text-emerald-700 lg:p-0 dark:text-white">Ticket</a>
+                        </li>
+                        <li>
+                            <a href="./admin.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-emerald-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Admin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Start block -->
+    <main class="flex-grow bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-screen-xl px-4 pt-20 max-sm:pt-16 pb-8 mx-auto lg:pb-16">
+            <!-- Row -->
+            <div class="gap-8 max-sm:mt-3">
+                <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h2 class="mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Ticket</h2>
+                    <div class="pt-3 max-sm:pt-8 mb-4 space-y-5 border-t border-gray-200 dark:border-gray-700">
+                        <!-- Ticket -->
+                        <!-- Modal toggle -->
+                        <button id="openNewTicket"
+                            class="block bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 px-4 mb-4 max-sm:mb-6 rounded focus:ring-4 focus:outline-none focus:ring-emerald-300 text-sm text-center dark:bg-emerald-600 dark:hover:bg-emerald-700"
+                            type="button">
+                            New Ticket
+                        </button>
+                    </div>
+                    <p class="mb-4 font-light lg:text-xl">
+                        Select any Subject in table to edit ticket.</p>
+                    <!-- Generate Report -->
+                    <div
+                        class="relative bg-white dark:bg-gray-900 rounded mb-8 overflow-x-auto max-sm:min-h-40 max-sm:max-h-80 min-h-[550px] max-h-[600px] border border-gray-300 dark:border-gray-700">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                            <thead
+                                class="sticky top-0 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Full Name
+                                            <a href="#" class="sort" data-order="1">
+                                                <svg class="w-3 h-3 ms-1.5" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Subject
+                                            <a href="#" class="sort" data-order="1">
+                                                <svg class="w-3 h-3 ms-1.5" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Status
+                                            <a href="#" class="sort" data-order="1">
+                                                <svg class="w-3 h-3 ms-1.5" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Description
+                                            <a href="#" class="sort" data-order="1">
+                                                <svg class="w-3 h-3 ms-1.5" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbobyTicketTable"
+                                class="divide-y bg-gray-100 divide-gray-200 dark:bg-gray-900 dark:divide-gray-600">
+                                <!-- Table rows go here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Extras -->
+                    <div class="space-y-4 mb-4 sm:flex sm:space-y-0 sm:space-x-4">
+                        <button id="downloadPdfBtnTable"
+                            class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 bg-gray-100 dark:bg-gray-900">
+                            <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                fill="red">
+                                <path
+                                    d="M369.9 97.9 286 14C277.7 5.7 266.1 0 253.5 0H160c-26.5 0-48 21.5-48 48v112H48c-26.5 0-48 21.5-48 48v208c0 26.5 21.5 48 48 48h48v32c0 26.5 21.5 48 48 48h208c26.5 0 48-21.5 48-48V142.5c0-12.6-5.1-24.7-14.1-33.6zM259.5 41.9 335 117.5h-59.5c-8.8 0-16-7.2-16-16V41.9zm76.5 426.1c0 8.8-7.2 16-16 16H160c-8.8 0-16-7.2-16-16v-32h139.7c17 0 30.8-14.1 30.3-31.1.4-16.6-13.4-30.9-30-30.9H176v-32h56c17 0 30.8-14.1 30.3-31.1.4-16.6-13.4-30.9-30-30.9h-56v-32h96c17 0 30.8-14.1 30.3-31.1.4-16.6-13.4-30.9-30-30.9h-96V96c0-8.8 7.2-16 16-16h80v56c0 26.5 21.5 48 48 48h48v288zm-240-208v208c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V224c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zm32 136v-16c0-4.4 3.6-8 8-8h5.6c6.9 0 13.5 3.6 17.1 9.5l7.7 12.3c2.9 4.7 9.7 4.7 12.6 0l7.7-12.3c3.6-5.9 10.1-9.5 17.1-9.5H192c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8h-5.6c-6.9 0-13.5-3.6-17.1-9.5l-7.7-12.3c-2.9-4.7-9.7-4.7-12.6 0l-7.7 12.3c-3.6 5.9-10.1 9.5-17.1 9.5H136c-4.4 0-8-3.6-8-8zm152-64v16c0 4.4-3.6 8-8 8h-80c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h80c4.4 0 8 3.6 8 8z" />
+                            </svg>
+                            Table Report PDF
+                        </button>
+                        <button id="downloadExcelBtnTable"
+                            class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 bg-gray-100 dark:bg-gray-900">
+                            <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                fill="green">
+                                <path
+                                    d="M438.6 160H416V64c0-35.35-28.65-64-64-64H96C60.65 0 32 28.65 32 64v96H9.4C4.176 160 0 164.2 0 169.4V192c0 4.375 4.375 9.594 9.4 9.594H32v160H9.4C4.176 361.6 0 365.8 0 371V393.4C0 398.6 4.176 403.8 9.4 403.8H32v44.2C32 484.2 60.65 512 96 512H352c35.35 0 64-28.65 64-64v-44.2h22.6c5.225 0 9.4-4.199 9.4-9.4V371c0-4.375-4.375-9.594-9.4-9.594H416V201.6h22.6c5.225 0 9.4-4.199 9.4-9.4V169.4C448 164.2 443.8 160 438.6 160zM96 48h256c8.836 0 16 7.164 16 16v96H80V64C80 55.16 87.16 48 96 48zM32 170.4H416V192H32V170.4zM32 361.6H416V393.4H32V361.6zM416 448c0 8.836-7.164 16-16 16H96c-8.836 0-16-7.164-16-16v-44.2h336V448zM256 324h-16v56H160v-56h-16V288h112V324zM224 288h-64v32h64V288zM368 324H320v16h32v16H320v16h48V324zM272 352H240V320H208v32H160V320H112v32H80v-48h192v48H272z" />
+                            </svg>
+                            Table Report Excel
+                        </button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+    <!-- End block -->
+
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <div class="text-center">
+                <a href="#"
+                    class="flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white">
+                    <img src="" class="h-6 mr-3 sm:h-9" alt="" />
+                    A Gilberto Fontanez Demo
+                </a>
+                <p class="font-light text-xs lg:text-lg max-sm:mb-6 text-emerald-600 dark:text-emerald-500">Deliver
+                    great experiences - without the complexity of
+                    traditional solutions.</p>
+                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2024 FonCom™. All Rights
+                    Reserved. Built with <a href="https://supabase.com/"
+                        class="text-emerald-600 hover:underline dark:text-emerald-500">Supabase</a> and <a
+                        href="https://tailwindcss.com"
+                        class="text-emerald-600 hover:underline dark:text-emerald-500">Tailwind CSS</a>.
+                </span>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Main modal -->
+    <div id="static-modal" tabindex="-1" aria-hidden="true"
+        class="hidden backdrop-blur overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-full">
+        <div class="relative p-4 w-4/6 max-sm:w-full max-h-full">
+            <!-- Modal content -->
+            <div
+                class="bg-white relative rounded-lg shadow shadow-gray-700/50 max-sm:shadow max-sm:shadow-gray-700/50 dark:bg-gray-800">
+                <!-- Modal header -->
+                <div
+                    class="flex sticky top-0 z-10 items-center justify-between p-4 md:p-5 border-b border-gray-200 rounded-t bg-gray-100 dark:bg-gray-700 dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white" id="modalTitle">
+
+                    </h3>
+                    <button type="button"
+                        class="text-gray-900 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:text-white dark:hover:text-emerald-500"
+                         id="closeBtn">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4 dark:bg-gray-900">
+                    <form id="ticketForm">
+                        <div class="mb-4">
+                            <label for="fullName"
+                                class="block text-sm font-medium mb-2 text-gray-900 dark:text-white">Full Name</label>
+                            <input type="text" id="fullName" name="fullName"
+                                class="w-full p-2 bg-gray-100 border border-gray-300 rounded text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="status"
+                                class="block text-sm font-medium mb-2 text-gray-900 dark:text-white">Status</label>
+                            <select id="status" name="status"
+                                class="w-full mb-2 pl-2 text-lg block font-medium text-gray-900 bg-transparent border border-gray-300 rounded focus:outline-none hover:bg-gray-100 hover:text-emerald-700 focus:z-50 focus:ring-4 focus:ring-gray-200 dark:bg-emerald-600 dark:focus:ring-gray-700 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                                required>
+                                <option value="Open">Open</option>
+                                <option value="Close" id="closeOption">Close</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject"
+                                class="block text-sm font-medium mb-2 text-gray-900 dark:text-white">Subject</label>
+                            <textarea id="subject" name="subject"
+                                class="w-full p-2 bg-gray-100 border border-gray-300 rounded text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                                rows="1" required></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <label for="description"
+                                class="block text-sm font-medium mb-2 text-gray-900 dark:text-white">Description</label>
+                            <textarea id="description" name="description"
+                                class="w-full p-2 bg-gray-100 border border-gray-300 rounded text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                                rows="4" required></textarea>
+                        </div>
+                        <div class="hidden mb-4" id="commentSection">
+                            <label for="comments"
+                                class="block text-sm font-medium mb-2 text-gray-900 dark:text-white">Comments</label>
+                            <div class="flex mb-2">
+                                <textarea id="comments" name="comments"
+                                    class="w-full p-2 bg-gray-100 border border-gray-300 rounded text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                                    rows="1" required></textarea>
+                                <div class="text-right ml-2">
+                                    <button id="addComment"
+                                        class="truncate text-white ml-4 bg-emerald-600 hover:bg-emerald-500 focus:ring-4 focus:ring-emerald-300 font-medium rounded text-sm px-5 py-2.5 text-center dark:bg-emerald-600 dark:hover:bg-emerald-700 focus:outline-none dark:focus:ring-emerald-500">Add
+                                        Comment</button>
+                                </div>
+                            </div>
+                            <div name="readcomments" id="readcomments">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div
+                    class="flex justify-end p-4 md:p-5 border-t bg-gray-100 border-gray-200 rounded-b dark:bg-gray-700 dark:border-gray-600">
+                    <button id="ticketSelectedPdfBtn"
+                        class="hidden items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto bg-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-100 dark:text-white dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-800">
+                        <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="red">
+                            <path
+                                d="M369.9 97.9 286 14C277.7 5.7 266.1 0 253.5 0H160c-26.5 0-48 21.5-48 48v112H48c-26.5 0-48 21.5-48 48v208c0 26.5 21.5 48 48 48h48v32c0 26.5 21.5 48 48 48h208c26.5 0 48-21.5 48-48V142.5c0-12.6-5.1-24.7-14.1-33.6zM259.5 41.9 335 117.5h-59.5c-8.8 0-16-7.2-16-16V41.9zm76.5 426.1c0 8.8-7.2 16-16 16H160c-8.8 0-16-7.2-16-16v-32h139.7c17 0 30.8-14.1 30.3-31.1.4-16.6-13.4-30.9-30-30.9H176v-32h56c17 0 30.8-14.1 30.3-31.1.4-16.6-13.4-30.9-30-30.9h-56v-32h96c17 0 30.8-14.1 30.3-31.1.4-16.6-13.4-30.9-30-30.9h-96V96c0-8.8 7.2-16 16-16h80v56c0 26.5 21.5 48 48 48h48v288zm-240-208v208c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V224c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zm32 136v-16c0-4.4 3.6-8 8-8h5.6c6.9 0 13.5 3.6 17.1 9.5l7.7 12.3c2.9 4.7 9.7 4.7 12.6 0l7.7-12.3c3.6-5.9 10.1-9.5 17.1-9.5H192c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8h-5.6c-6.9 0-13.5-3.6-17.1-9.5l-7.7-12.3c-2.9-4.7-9.7-4.7-12.6 0l-7.7 12.3c-3.6 5.9-10.1 9.5-17.1 9.5H136c-4.4 0-8-3.6-8-8zm152-64v16c0 4.4-3.6 8-8 8h-80c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h80c4.4 0 8 3.6 8 8z" />
+                        </svg>
+                        Ticket Report PDF
+                    </button>
+                    <button type="submit" id="saveNewTicket"
+                        class="hidden text-white ml-4 bg-emerald-600 hover:bg-emerald-500 focus:ring-4 focus:ring-emerald-300 font-medium rounded text-sm px-5 py-2.5 text-center dark:bg-emerald-600 dark:hover:bg-emerald-700 focus:outline-none dark:focus:ring-emerald-500">Save
+                    </button>
+                    <button type="submit" id="updateNewTicket"
+                        class="hidden text-white ml-4 bg-emerald-600 hover:bg-emerald-500 focus:ring-4 focus:ring-emerald-300 font-medium rounded text-sm px-5 py-2.5 text-center dark:bg-emerald-600 dark:hover:bg-emerald-700 focus:outline-none dark:focus:ring-emerald-500">Save
+                        Changes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main modal Contact -->
+    <div id="static-modal-contact" tabindex="-1" aria-hidden="true"
+        class="hidden backdrop-blur overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-full">
+        <div class="relative p-4 w-4/6 max-sm:w-full max-h-full">
+            <!-- Modal content -->
+            <div
+                class="bg-white relative rounded-lg shadow shadow-gray-700/50 max-sm:shadow max-sm:shadow-gray-700/50 dark:bg-gray-800">
+                <!-- Modal header -->
+                <div
+                    class="flex sticky top-0 z-10 items-center justify-between p-4 md:p-5 border-b border-gray-200 rounded-t bg-gray-100 dark:bg-gray-700 dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white" id="modalTitle-contact">
+                        To: Gilberto Fontanez
+                    </h3>
+                    <button type="button"
+                        class="text-gray-900 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:text-white dark:hover:text-emerald-500"
+                         id="closeBtnContact">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4 dark:bg-gray-900">
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="contactFullName"
+                                class="block text-sm font-medium mb-2 text-gray-900 dark:text-white">Full Name</label>
+                            <input type="contactFullName" id="contactFullName" name="contactFullName"
+                                class="w-full p-2 bg-gray-100 border border-gray-300 rounded text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactEmailInput"
+                                class="block text-sm font-medium mb-2 text-gray-900 dark:text-white">Email</label>
+                            <input type="contactEmailInput" id="contactEmailInput" name="contactEmailInput"
+                                class="w-full p-2 bg-gray-100 border border-gray-300 rounded text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactSubject"
+                                class="block text-sm font-medium mb-2 text-gray-900 dark:text-white">Subject</label>
+                            <input type="text" id="contactSubject" name="subject"
+                                class="w-full p-2 bg-gray-100 border border-gray-300 rounded text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactMessage"
+                                class="block text-sm font-medium mb-2 text-gray-900 dark:text-white">Message</label>
+                            <textarea id="contactMessage" name="message"
+                                class="w-full p-2 bg-gray-100 border border-gray-300 rounded text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                                rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div
+                    class="flex justify-end p-4 md:p-5 border-t bg-gray-100 border-gray-200 rounded-b dark:bg-gray-700 dark:border-gray-600">
+                    <button type="button" id="sendEmailBtn"
+                        class="text-white bg-emerald-600 hover:bg-emerald-500 focus:ring-4 focus:ring-emerald-300 font-medium rounded text-sm px-5 py-2.5 text-center dark:bg-emerald-600 dark:hover:bg-emerald-700 focus:outline-none dark:focus:ring-emerald-500">
+                        Send Email
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.17.3/dist/xlsx.full.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./utilities/ticket.js"></script>
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+
+
+</html>
